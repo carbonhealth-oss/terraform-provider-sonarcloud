@@ -34,8 +34,4 @@ fmt:
 docs:
 	go run github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs
 
-docs-upload:
-	  curl  --output docs/index.md https://raw.githubusercontent.com/carbonhealth-oss/terraform-provider-sonarcloud/main/docs/index.md && \
-      curl  --output docs/resources/project_provision.md  https://raw.githubusercontent.com/carbonhealth-oss/terraform-provider-sonarcloud/main/docs/resources/project_provision.md && \
-      curl  --output docs/resources/project_user_provisions.md https://raw.githubusercontent.com/carbonhealth-oss/terraform-provider-sonarcloud/main/docs/resources/project_user_provisions.md
 .PHONY: gen
